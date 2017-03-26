@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Avantgarde,sans-serif;}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+
+.month {
+    padding: 30px 20px;
+    width: 100%;
+    background: #1abc9c;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    margin: 0;
+    padding: 10x 0;
+	background: #eee
+    color: #ffffff
+
+	}
+
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    font-size:24px;
+}
+
+.data {
+    padding: 10x 0;
+	background: #eee
+    color: #ffffff
+    margin: 0;
+
+	}
+
+.data li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    font-size:17px;
+}
+
+.days li:hover {
+    background-color: ##0099cc;
+}
+
+
+.days li .active {
+    padding: 10px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+
+</head>
+<body>
+
+<h1>Patient Calendar</h1>
+
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li style="text-align:center">
+      March<br>
+      <span style="font-size:18px">2017
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Sunday</li>
+  <li>Monday</li>
+  <li>Tuesday</li>
+  <li>Wednesday</li>
+  <li>Thursday</li>
+  <li>Friday</li>
+  <li>Saturday</li>
+
+</ul>
+
+<ul class="days">  
+  <li> </li>
+  <li> </li>
+  <li> </li>  
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Daily%20View.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">1</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Daily%20View.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View2.html', 'newwindow', 'width=1000, height=500'); return false;">2</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Daily%20View.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View3.html', 'newwindow', 'width=1000, height=500'); return false;">3</a></li>
+  <li style="color: white; background-color: #ff0000"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Daily%20View.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View4.html', 'newwindow', 'width=1000, height=500'); return false;">4</a></li>
+</ul>
+
+<ul class="data">
+  <li> </li>
+  <li> </li>
+  <li> </li> 
+  <li>89</li>
+  <li>92</li>
+  <li>93</li>
+  <li>79</li> 
+</ul>
+  
+  <hr>
+  <ul class="days"> 
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View2.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">5</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View2.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">6</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View2.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">7</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View2.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">8</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View2.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">9</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View2.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">10</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View2.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">11</a></li>
+</ul>
+<ul class="data">
+  <li>112</li>
+  <li>117</li>
+  <li>132</li>
+  <li>128</li>
+  <li>144</li>
+  <li>145</li>
+  <li>147</li>  
+</ul>
+  
+  
+  <hr>
+  <ul class="days"> 
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View3.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">12</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View3.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">13</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View3.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">14</a></li>
+  <li style= "color: white; background-color: yellow"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View3.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">15</a></li>
+  <li style="color: #ffffff; background-color: #ff0000"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View3.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">16</a></li>
+  <li style="color: #ffffff; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View3.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">17</a></li>
+  <li style="color: #ffffff; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View3.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">18</a></li>
+  </ul>
+<ul class="data">
+  <li>145</li>
+  <li>155</li>
+  <li>137</li>
+  <li>177</li>
+  <li>187</li>
+  <li>166</li>
+  <li>162</li>
+</ul>
+  
+  <hr>
+<ul class="days"> 
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View4.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View.html', 'newwindow', 'width=1000, height=500'); return false;">19</a></li>
+  <li style="color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View4.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View2.html', 'newwindow', 'width=1000, height=500'); return false;">20</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View4.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View3.html', 'newwindow', 'width=1000, height=500'); return false;">21</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View4.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View4.html', 'newwindow', 'width=1000, height=500'); return false;">22</a></li>
+  <li style= "color: white; background-color: green"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View4.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View23.html', 'newwindow', 'width=1000, height=500'); return false;">23</a></li>
+  <li style= "color: white; background-color: yellow"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View4.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View24.html', 'newwindow', 'width=1000, height=500'); return false;">24</a></li>
+  <li style= "color: white; background-color: red"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View4.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View25.html', 'newwindow', 'width=1000, height=500'); return false;">25</a></li>
+</ul>
+<ul class="data">
+  <li>163</li>
+  <li>149</li>  
+  <li>152</li>
+  <li>131</li>
+  <li>119</li>
+  <li>82</li>
+  <li>78</li>
+  </ul>
+  
+  <hr>
+  <ul class="days"> 
+  <li style= "color: white; background-color: red"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Daily%20View26.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View26.html', 'newwindow', 'width=1000, height=500'); return false;">26</a></li>
+  <li style = "color: white; background-color: grey"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Daily%20View27.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View27.html', 'newwindow', 'width=1000, height=500'); return false;">27</a></li>
+  <li style = "color: white; background-color: grey"><a style= "text-decoration:none;" href="file:///C:/Users/Jacob/Documents/Weekly%20View4.html" onclick="window.open('file:///C:/Users/Jacob/Documents/Daily%20View28.html', 'newwindow', 'width=1000, height=500'); return false;">28</a></li>
+  <li style = "color: white; background-color: grey">29</li>
+  <li style = "color: white; background-color: grey">30</li>
+  <li style = "color: white; background-color: grey">31</li>
+  <li> </li>
+  </ul>
+<ul class="data">
+  <li>74</li>
+  <li>91</li>
+  <li>99</li>
+  <li>109</li>
+  <li>112</li>
+  <li>115</li>
+</ul>
+
+<div style="text-align: center;"> <img src="C:\Users\Jacob\Documents\Patient Charts\month.png"/> </div>
+
+</body>
+</html>
